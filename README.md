@@ -1,11 +1,11 @@
 # CI images for AI4OS
 
-base: base images, derived from Ubuntu Linux long-term support images (18.04, 22.04, 24.04)
-python: python images for various python versions. python images are based on ":base" ones
+* **base**: base images, derived from Ubuntu Linux long-term support images (18.04, 22.04, 24.04)
+* **python**: python images for various python versions. python images are based on ":base" ones
 
 ## python images
 
-Include following Linux:
+Include following Linux packages:
 
 * wget
 * git
