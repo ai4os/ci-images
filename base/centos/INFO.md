@@ -1,0 +1,1 @@
+**CentOS 7** is generally discontinued and deprecated

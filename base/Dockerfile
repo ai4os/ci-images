@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-MAINTAINER Pablo Orviz <orviz@ifca.unican.es>
+LABEL org.opencontainers.image.authors='Pablo Orviz <orviz@ifca.unican.es>'
 
 USER root
 
