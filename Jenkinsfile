@@ -47,7 +47,13 @@ pipeline {
         }
        stage('AI4OS Hub Docker delivery to registry') {
             when {
-                expression {docker_ids.size() > 0}
+                expression {
+                    docker_ids.size() > 0
+                }
+
+                expression {
+                    env.BRANCH_NAME == 'master'
+                }
             }
             steps {
                 script {
