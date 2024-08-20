@@ -15,7 +15,8 @@ RUN curl -s -L https://bootstrap.pypa.io/get-pip.py | python
 # fix tox<4 in order to reuse virtual environment during tests vk@240819
 RUN pip install --no-cache-dir flake8 pylint pydocstyle pep8 bandit 'tox<4.0.0' twine wheel setuptools
 
-RUN pip install --no-cache-dir ai4-metadata
+# NOTE(aloga): ai4-metadata is not available in Python 3.8
+# RUN pip install --no-cache-dir ai4-metadata
 
 # Default command, keep the container working
 CMD ["/usr/bin/tail", "-f", "/dev/null"]
