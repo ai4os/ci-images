@@ -1,7 +1,6 @@
 # CI images for AI4OS
 
-* **base**: base images, derived from Ubuntu Linux long-term support images (18.04, 22.04, 24.04)
-* **python**: python images for various python versions. python images are based on ":base" ones
+* **python** images for various python versions: 3.6, 3.8, 3.10, 3.11, 3.12. Based on the [official python:3.XY](https://hub.docker.com/_/python/tags) images
 
 ## python images
 
@@ -10,17 +9,20 @@ Include following Linux packages:
 * wget
 * git
 * gcc
-* python3.XY
-* python3.XY-dev
 * build-essential
-* libcurl4-gnutls-dev
-* libffi-dev
-* libssl-dev
-* libxml2-dev
-* libxslt1-dev
-* libgnutls28-dev
-* default-libmysqlclient-dev libsqlite3-dev
 * curl
 
+And pypi packages:
 
+flake8
+pylint
+pydocstyle
+pep8
+bandit
+tox<4.0
+twine
+wheel
+setuptools
+
+from python>=3.10 also ai4-metadata
 
